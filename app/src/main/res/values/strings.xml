@@ -1,0 +1,8 @@
+<resources>
+   <!-- <string name="app_name">PracticeAndroid</string>-->
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="button_name">Continue</string>
+    <string name="app_title">ActiviTee</string>
+</resources>

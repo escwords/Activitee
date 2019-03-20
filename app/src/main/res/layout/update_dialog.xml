@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:background="@color/colorPrimary"
+              android:layout_height="match_parent">
+
+    <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="8dp"
+    >
+
+        <LinearLayout android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:orientation="vertical"
+                      android:layout_margin="2dp"
+        >
+            <LinearLayout android:layout_width="match_parent"
+                          android:layout_height="wrap_content"
+                          android:orientation="horizontal"
+                          android:weightSum="2"
+            >
+
+                <com.google.android.material.textfield.TextInputLayout
+                        style="@style/Widget.Design.TextInputLayout"
+                        android:layout_width="match_parent"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        app:hintTextAppearance="@style/Widget.Activity.TextHintApperence"
+                        android:hint="Start Time"
+
+                >
+                    <com.google.android.material.textfield.TextInputEditText
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:inputType="text"
+                            android:textAlignment="center"
+                            android:id="@+id/uStart"
+
+                    />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                        style="@style/Widget.Design.TextInputLayout"
+                        android:layout_width="match_parent"
+                        android:layout_weight="1"
+                        android:hint="End Time"
+                        app:hintTextAppearance="@style/Widget.Activity.TextHintApperence"
+
+
+                        android:layout_height="wrap_content">
+                    <com.google.android.material.textfield.TextInputEditText
+                            android:layout_width="match_parent"
+                            android:id="@+id/uEnd"
+                            android:layout_height="match_parent"
+                            android:inputType="text"
+                    />
+                </com.google.android.material.textfield.TextInputLayout>
+            </LinearLayout>
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                          android:orientation="vertical"
+            >
+                <com.google.android.material.textfield.TextInputLayout
+                        style="@style/Widget.Design.TextInputLayout"
+                        android:layout_width="match_parent"
+                        android:layout_weight="1"
+                        android:hint="Title"
+                        app:hintTextAppearance="@style/Widget.Activity.TextHintApperence"
+
+                        android:layout_height="wrap_content">
+                    <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/uTitle"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:inputType="text"
+                    />
+                </com.google.android.material.textfield.TextInputLayout>
+                <com.google.android.material.textfield.TextInputLayout
+                        style="@style/Widget.Design.TextInputLayout"
+                        android:layout_width="match_parent"
+                        android:layout_weight="1"
+                        android:hint="Course"
+                        app:hintTextAppearance="@style/Widget.Activity.TextHintApperence"
+
+                        android:layout_height="wrap_content">
+                    <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/uCourse"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:inputType="text"
+                    />
+                </com.google.android.material.textfield.TextInputLayout>
+                <com.google.android.material.textfield.TextInputLayout
+                        style="@style/Widget.Design.TextInputLayout"
+                        android:layout_width="match_parent"
+                        android:layout_weight="1"
+                        android:hint="Lecturer"
+                        android:layout_height="wrap_content">
+                    <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/uLecturer"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:inputType="text"
+                    />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                        style="@style/Widget.Design.TextInputLayout"
+                        android:layout_width="match_parent"
+                        android:layout_weight="1"
+                        android:hint="Venue"
+                        app:hintTextAppearance="@style/Widget.Activity.TextHintApperence"
+
+                        android:layout_height="wrap_content">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/uVenue"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:inputType="text"
+                    />
+                </com.google.android.material.textfield.TextInputLayout>
+
+            </LinearLayout>
+            <RelativeLayout android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                <com.google.android.material.button.MaterialButton
+                        android:id="@+id/updateBtn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginEnd="10dp"
+                        android:text="Update"
+                />
+                <TextView
+                        android:id="@+id/exitBtn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toStartOf="@+id/updateBtn"
+                        android:layout_toLeftOf="@+id/updateBtn"
+                        android:layout_marginEnd="12dp"
+                        android:layout_marginLeft="12dp"
+                        style="@style/Card_Textview"
+                        android:textAllCaps="false"
+                        android:text="Cancel"
+                        android:textColor="@color/textButton"
+                />
+
+            </RelativeLayout>
+        </LinearLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+
+</LinearLayout>

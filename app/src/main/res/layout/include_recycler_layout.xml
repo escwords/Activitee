@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--<androidx.coordinatorlayout.widget.CoordinatorLayout-->
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
+
+
+    <com.google.android.material.appbar.AppBarLayout
+            android:id="@+id/app_bar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:stateListAnimator="@null"
+            tools:targetApi = "21"
+
+
+    >
+        <androidx.appcompat.widget.Toolbar
+                android:layout_width="match_parent"
+                android:id="@+id/main_actionbar"
+                android:layout_height="?attr/actionBarSize"
+                android:theme="@style/Widget.Activitee.toolbar"
+                app:layout_scrollFlags="scroll|enterAlways|snap"
+                app:navigationIcon="@drawable/ic_nav_black_24dp"
+                android:fitsSystemWindows="true"
+        >
+
+            <com.tbuonomo.viewpagerdotsindicator.SpringDotsIndicator
+                    android:id="@+id/springdot"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="5dp"
+                    app:dampingRatio="0.5"
+                    app:dotsColor="@color/material_black"
+                    app:dotsStrokeColor="@color/material_yellow"
+                    app:dotsCornerRadius="2dp"
+                    app:dotsSize="16dp"
+                    app:dotsSpacing="6dp"
+                    app:dotsStrokeWidth="2dp"
+                    app:stiffness="300"
+                    android:layout_gravity="center_horizontal"
+                    android:fitsSystemWindows="true"
+            />
+
+
+        </androidx.appcompat.widget.Toolbar>
+
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.viewpager.widget.ViewPager
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/activity_viewpager"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    >
+        <androidx.viewpager.widget.PagerTitleStrip
+                android:id="@+id/pagerTitleStrip"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#ffffff"
+                android:textAlignment="center"
+                android:paddingBottom="10dp"
+           style="@style/TextAppearance.pagerTitleStrip"
+                android:layout_gravity = "top"
+        >
+        </androidx.viewpager.widget.PagerTitleStrip>
+    </androidx.viewpager.widget.ViewPager>
+
+<!--
+</androidx.coordinatorlayout.widget.CoordinatorLayout>-->
+</LinearLayout>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:tools="http://schemas.android.com/tools"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent" xmlns:app="http://schemas.android.com/apk/res-auto"
+             tools:context=".ui.practiceandroid.ui.MonFragment"
+              >
+
+<RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+ <androidx.core.widget.NestedScrollView
+         android:layout_width="match_parent"
+         android:layout_height="match_parent"
+         android:id="@+id/nestedScroll"
+
+
+ >
+     <androidx.recyclerview.widget.RecyclerView
+            android:paddingTop="10dp"
+            android:paddingBottom="50dp"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_gravity="center_horizontal"
+           android:id="@+id/recycler_view"
+   >
+   </androidx.recyclerview.widget.RecyclerView>
+
+ </androidx.core.widget.NestedScrollView>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:layout_width="wrap_content"
+            android:id="@+id/fab_mon"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/textButton"
+            android:layout_alignParentEnd="true"
+            app:srcCompat="@drawable/ic_note_add_black_24dp"
+           android:layout_alignBottom="@+id/nestedScroll"
+            android:layout_marginBottom="5dp"
+            android:layout_marginEnd="15dp"
+    />
+            <!--android:layout_alignParentBottom="true"-->
+
+</RelativeLayout>
+
+</RelativeLayout>

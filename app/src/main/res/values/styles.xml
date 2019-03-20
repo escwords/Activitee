@@ -1,0 +1,62 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+
+    <!-- Base application theme. -->
+    <style name="Activitee.Theme" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:windowLightStatusBar" tools:targetApi="m">true</item>
+    </style>
+
+    <style name="Widget.Activitee.toolbar" parent="Widget.AppCompat.ActionBar">
+        <item name="android:background">@color/colorPrimary</item>
+        <item name="android:theme">@style/Activitee.Theme</item>
+        <item name="popupTheme">@style/ThemeOverlay.AppCompat.Light</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:fontFamily">@font/cantarell_bold</item>
+        <item name="titleTextAppearance">@style/TextAppearance.Activitee.Toolbar</item>
+    </style>
+
+    <style name="TextAppearance.Activitee.Toolbar" parent="TextAppearance.MaterialComponents.Button">
+    <item name="android:textSize">16sp</item>
+</style>
+
+    <style name="TextAppearance.pagerTitleStrip" parent="TextAppearance.MaterialComponents.Headline5">
+        <item name="android:textSize">15dp</item>
+        <item name="android:paddingTop">10dp</item>
+        <item name="fontFamily">@font/cantarell_bold</item>
+        <item name="android:elevation">10dp</item>
+
+    </style>
+    
+    <style name="Widget.Activity.TextHintApperence" parent="TextAppearance.Design.Hint">
+        <item name="android:textColor">@color/textColorPrimary</item>
+        <item name="android:fontFamily">@font/cantarell_bold</item>
+        <item name="android:layout_marginStart">10dp</item>
+    </style>
+
+    <style name="Textview.style" parent="TextAppearance.AppCompat.Large">
+        <item name="android:fontFamily">monospace</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:textAppearance">@style/TextAppearance.AppCompat.Body2</item>
+    </style>
+
+    <style name="Card_Textview" parent="TextAppearance.MaterialComponents.Headline6">
+        <item name="android:gravity">center</item>
+        <item name="android:layout_marginTop">10dp</item>
+        <item name="fontFamily">@font/cantarell_bold</item>
+        <item name="android:textColor">@color/colorPrimaryDark</item>
+    </style>
+
+    <style name="Card_Textview2" parent="TextAppearance.MaterialComponents.Headline6">
+        <item name="fontFamily">@font/cantarell_bold</item>
+        <item name="android:textColor">@color/textColorPrimary</item>
+    </style>
+    <style name="Header_TextView" parent="TextAppearance.MaterialComponents.Headline4">
+        <item name="android:textColor">@color/colorPrimaryDark</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:textAllCaps">true</item>
+    </style>
+</resources>
